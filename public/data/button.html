@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <link rel="stylesheet" href="http://124.204.76.214:21194/webframe/lib/@Cennavi/view-web-ui/dist/view-web-ui.css">
+  </link>
+  <style>
+    #app {
+      /* border: 1px solid red; */
+    }
+
+    .cn-row {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <cn-row>
+      <cn-button>默认按钮</cn-button>
+      <cn-button type="primary">主要按钮</cn-button>
+      <cn-button type="success">成功按钮</cn-button>
+      <cn-button type="info">信息按钮</cn-button>
+      <cn-button type="warning">警告按钮</cn-button>
+      <cn-button type="danger">危险按钮</cn-button>
+    </cn-row>
+
+    <cn-row>
+      <cn-button icon="cn-icon-search" circle></cn-button>
+      <cn-button type="primary" icon="cn-icon-edit" circle></cn-button>
+      <cn-button type="success" icon="cn-icon-check" circle></cn-button>
+      <cn-button type="info" icon="cn-icon-message" circle></cn-button>
+      <cn-button type="warning" icon="cn-icon-star-off" circle></cn-button>
+      <cn-button type="danger" icon="cn-icon-delete" circle></cn-button>
+    </cn-row>
+  </div>
+</body>
+<script src="http://124.204.76.214:21194/webframe/lib/vue/dist/vue.js"></script>
+<script src="http://124.204.76.214:21194/webframe/lib/@Cennavi/view-web-ui/dist/view-web-ui.umd.js"></script>
+<script id="vue-code">
+  new Vue({
+    el: '#app',
+    data: function () {
+      return { visible: false }
+    }
+  })
+</script>
+
+</html>
